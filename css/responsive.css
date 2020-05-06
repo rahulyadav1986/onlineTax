@@ -1,0 +1,97 @@
+@media (max-width: 1200px) and (min-width:1024px) {
+	.right-navigation .navi li a{    padding: 40px 13px;}
+    
+}
+
+@media (max-width: 1023px) {
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+	.slicknav_menu i.fa{ display: none;}
+	.slicknav_menu span.fa{ display: none;}
+	.slicknav_menu span.caret{ display: none;}
+	.logo{ float: left;margin-top: 0; position: absolute;top: 13px;left: 15px;}
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 991px) {
+.col-sm-3.left-side-col {
+  width: 100%;
+}
+
+.sidebar-toggle {
+  display: block;
+}
+}
+
+@media (max-width: 768px) {
+	.carousel-caption > p{ font-size: 25px;}
+	
+}
+
+@media (max-width: 767px) {
+	.top-header {padding: 0px 0;}
+	.header-ph ul li {padding: 6px 0px 0;font-size: 12px;}
+	.cust-login ul li a {margin: 0px 0;padding: 8px 12px;font-size: 10px;}
+	.carousel-caption > p { font-size: 18px;     width: 100%;}
+	.no-pad {margin: 0px -15px;}
+	.testimonial_pic img {width: auto !important;}
+	.header-ph{    margin-top: 4px;}
+	.services-sec{ padding: 0;}	
+	.services-listing{ text-align: center;}
+	.how-online-pic{ margin-bottom: 0;}
+	.services-listing > li i{ display: none;}
+	.testimonial_text{ margin-top: 30px; padding: 0 30px; width: 100%; text-align: center; }
+	.testimonial_text p{ text-align: center;}
+	.testimonial_pic img{ width: 100px !important; display: block; margin: auto;}
+	.clientspeak-clients-sec{   background: none; background-color: #313131; 
+		height: auto;
+		padding: 70px 0; text-align: center;
+	}
+	#owl-demo1 .owl-dots{ position: relative; top: 0;}
+	.partners{ margin-top: 60px;}
+	.news-box{ text-align: center; margin-bottom: 30px;}
+	.news-box > p{ float: none; display: inline-block;}
+	
+	.rights{ text-align: center;}
+
+	
+}
+
+@media (max-width: 568px) {
+	
+	 
+	.foot-info-con li{ margin-bottom: 30px; text-align: center; width: 50%; float: left;}
+	.foot-info-con li .media-left{ width: 100%; text-align: center; display: inline-block; padding: 0; margin: 0;}
+	.foot-info-con .icon{margin: 0;}
+	.foot-info-con .media-body{ width: 100%; text-align: center; display: inline-block;}
+	.foot-info-con p{ text-align: center; display: block; float: none;}
+
+}
+
+@media (max-width: 420px) {
+
+	.header-ph {margin-top: 1px;}
+	.cust-login ul li a{    padding: 8px 8px;}
+	.cust-login ul li a i{ font-size: 16px;     margin: 0 5px 0 0;}
+	.carousel-inner > .item > img{    height: 233px;
+		object-fit: cover;}
+	
+
+}
+
+@media (max-width: 360px) {
+	
+
+}
+
+@media (max-width: 320px) {
+
+}

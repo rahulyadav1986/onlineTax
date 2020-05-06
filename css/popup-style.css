@@ -1,0 +1,131 @@
+body{
+ /* background-color:#292B2C;*/
+ /*font-family: 'PT Sans', sans-serif;*/
+}
+a{
+	outline: 0;
+	text-decoration: none;
+}
+.popup-bg{
+	position:fixed;
+	left:0;right:0;
+	top:0;bottom:0;
+	z-index:100000;
+	background-color:rgba(50,50,50,0.5);
+}
+
+/*.button{
+	position:relative;
+	font-size:17px;
+	background:#DA244F;
+	border-radius: 3px;
+	border-bottom: 3px solid #B5002A;
+	padding:7px 15px;
+	color:#fff;
+	cursor:pointer;
+	float:right;
+	margin:50px 70px;
+ 	-webkit-transition:margin 100ms;
+	-moz-transition:margin 100ms;
+	transition:margin 100ms ;	
+}
+.button:active{
+   margin: 53px 70px;
+}
+.button:hover{
+	background:#C40532;
+}*/
+form{
+	display:block;
+	/*margin:30px;*/
+}
+/*form *{
+	margin:10px;
+}*/
+input:focus{
+	border:2px solid #5DC3A7;
+  outline:0;
+}
+input{
+	/*width:240px;*/
+	padding:7px;
+	border:2px solid #ccc ;
+	border-radius:3px;
+}
+/*button{
+	float: right;
+	padding: 8px 12px;
+	
+	background: #5DC3A7;
+	border: none;
+	color: #fff;
+	border-bottom: 3px solid #23AA84;
+	border-radius: 3px;
+	cursor: pointer;
+}
+button:active{
+	margin: 18px 10px;
+}
+button:hover{
+	background-color: #0FC491;
+}*/
+#forgot-link{
+	font-size: 14px;
+	line-height: 45px;
+	color: #5DC3A7;
+	display: inline-block;
+}
+#forgot-link:hover{
+	color: #23AA84;
+}
+#popup {
+  background-color: #fff;
+  background-image: url("../images/pop-up-pic1.html");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  height: 300px;
+  left: 50%;
+  margin-top: -190px;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  z-index: 101;
+}
+#popup-close{
+	float: right;
+	/*color: #fff;*/
+	font-family: serif;
+	/*font-size: 15px;*/
+}
+#popup-close:hover{
+	color: #000;
+}
+
+.popup-text {
+	text-align: center;
+	 font-family: 'open_sansregular';
+	 font-weight: bold;
+}
+.form-popup label {
+	float: left;
+	line-height: 34px;
+}
+.popup-demo select {
+	width: 190px;
+	margin-left: 10px;
+	background-color: #fff;
+	border: 1px solid #009999;
+	border-radius: 5px;
+}
+.popup-demo input {
+	float: left;
+}
+ .popup-demo {
+ 	max-width: 370px;
+ 	margin: 0 auto;
+ }

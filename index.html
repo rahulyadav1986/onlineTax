@@ -1,0 +1,891 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>One Tax Solutions</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="icon" href="images/fav_icon.png" type="images/fav_icon.png" sizes="18x18">
+	<!-- Bootstrap -->
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="load-page" id="load_screen">
+		<div class="sk-wave">
+			<div class="sk-rect sk-rect1"></div>
+			<div class="sk-rect sk-rect2"></div>
+			<div class="sk-rect sk-rect3"></div>
+			<div class="sk-rect sk-rect4"></div>
+			<div class="sk-rect sk-rect5"></div>
+		</div>
+	</div>
+	<p id="back-top">
+		<a href="#top"><span class="totop"></span><img src="images/back_to_top.png" /></a>
+	</p>
+	<header>
+		<div class="top-header">
+			<div class="container">
+				<div class="header-ph">
+					<ul>
+						<li><i class="fa fa-phone"></i> (+91) 9658142574</li>
+					</ul>
+				</div>
+				<div class="cust-login">
+					<ul>
+						<li><a href="#" data-toggle="modal" data-target="#partner-login"><i
+									class="fa fa-sign-in"></i>Partner login</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#customer-login"><i
+									class="fa fa-sign-in"></i>CUSTOMER LOGIN</a></li>
+					</ul>
+				</div>
+					<!-- partner-login-->
+					<div class="modal fade" id="partner-login" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+											aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<div class="sign_in_up_outer">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="sign_in_heading">Already a member? Sign In</h4>
+												<form role="form">
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="email"
+															name="email" placeholder="Email" required="" type="text">
+													</div>
+													<div class="form-group">
+														<input title="Password" id="password"
+															class="form-control signin_from_control" name="password"
+															placeholder="create password" type="password">
+													</div>
+													<button type="button" id="submit" name="submit"
+														class="btn signin_submit_btn">
+														Sign In
+													</button>
+												</form>
+												<a href="#" class="frgt-password" data-toggle="modal"
+													data-target="#frgt-password" data-dismiss="modal">Forgot password
+													?</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="create" data-toggle="modal" data-target="#partner-registration"
+										data-dismiss="modal">Don't have an account? Create one</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- forget password -->
+					<div class="modal fade" id="frgt-password" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+											aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<div class="sign_in_up_outer">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="sign_in_heading">Forgot Password</h4>
+												<form role="form">
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="email"
+															name="email" placeholder="Email" required="" type="text">
+													</div>
+													<button type="button" id="submit" name="submit"
+														class="btn signin_submit_btn">
+														Submit
+													</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="create" data-toggle="modal" data-target="#partner-registration"
+										data-dismiss="modal">Don't have an account? Create one</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- partner-registrationl -->
+					<div class="modal fade" id="partner-registration" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+											aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<div class="sign_in_up_outer">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="sign_in_heading">Create an account</h4>
+												<form role="form">
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="name"
+															name="name" placeholder="Name" required="" type="text">
+													</div>
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="email"
+															name="email" placeholder="Email" required="" type="text">
+													</div>
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="mobile"
+															name="mobile" placeholder="Mobile Number" required=""
+															type="text">
+													</div>
+													<div class="form-group">
+														<input title="Password" id="password"
+															class="form-control signin_from_control" name="password"
+															placeholder="create password" type="password">
+													</div>
+													<div class="form-group">
+														<input title="Password" id="confirmation"
+															class="form-control signin_from_control" name="confirmation"
+															placeholder="confirm password" type="password">
+													</div>
+
+													<div class="form-group row">
+														<div class="col-sm-8">
+															<!--<input type="file" name="file" id="file" class="upload form-control"/>-->
+															<input id="uploadFile" placeholder="Choose File"
+																class="form-control signin_from_control" type="text">
+															<p class="small">Attach necessary documents</p>
+														</div>
+														<div class="file-upload btn col-sm-4"><span>Upload attachment
+															</span> <input class="upload" id="uploadBtn" type="file">
+														</div>
+													</div>
+
+													<button type="button" id="submit" name="submit"
+														class="btn signin_submit_btn">
+														Create an account
+													</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="create1" data-toggle="modal" data-target="#partner-login"
+										data-dismiss="modal">Already have an account? login!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- partner-registrationl -->
+
+					<!-- customer-login-->
+					<div class="modal fade" id="customer-login" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+											aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<div class="sign_in_up_outer">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="sign_in_heading">Already a member? Sign In</h4>
+												<form role="form">
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="email"
+															name="email" placeholder="Email" required="" type="text">
+													</div>
+													<div class="form-group">
+														<input title="Password" id="password"
+															class="form-control signin_from_control" name="password"
+															placeholder="create password" type="password">
+													</div>
+													<button type="button" id="submit" name="submit"
+														class="btn signin_submit_btn">
+														Sign In
+													</button>
+												</form>
+												<a href="#" class="frgt-password">Forgot password ?</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="create" data-toggle="modal" data-target="#customer-registration"
+										data-dismiss="modal">Don't have an account? Create one</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- partner-registrationl -->
+					<div class="modal fade" id="customer-registration" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+											aria-hidden="true">&times;</span></button>
+								</div>
+								<div class="modal-body">
+									<div class="sign_in_up_outer">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="sign_in_heading">Create an account</h4>
+												<form role="form">
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="name"
+															name="name" placeholder="Name" required="" type="text">
+													</div>
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="email"
+															name="email" placeholder="Email" required="" type="text">
+													</div>
+													<div class="form-group">
+														<input class="form-control signin_from_control" id="mobile"
+															name="mobile" placeholder="Mobile Number" required=""
+															type="text">
+													</div>
+													<div class="form-group">
+														<input title="Password" id="password"
+															class="form-control signin_from_control" name="password"
+															placeholder="create password" type="password">
+													</div>
+													<div class="form-group">
+														<input title="Password" id="confirmation"
+															class="form-control signin_from_control" name="confirmation"
+															placeholder="confirm password" type="password">
+													</div>
+													<button type="button" id="submit" name="submit"
+														class="btn signin_submit_btn">
+														Create an account
+													</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<a href="#" class="create1" data-toggle="modal" data-target="#customer-login"
+										data-dismiss="modal">Already have an account? login!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- partner-registrationl -->
+			</div>
+		</div>
+		<div class="bottom-header">
+			<div class="container">
+				<a href="index.html" class="logo"><img src="images/logo.jpg" /></a>
+				<div class="right-navigation">
+					<ul class="navi" id="menu">
+						<li class="current_menu_items"><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">About us<span class="caret"></span></a>
+							<ul>
+								<li><a href="company-profile.html">Company profile</a></li>
+								<li><a href="why-us.html">Why Us</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">All Services <span class="caret"></span></a>
+							<ul>
+								<li>
+									<a href="#">Start a Business <span class="fa fa-plus"></span></a>
+									<ul>
+										<li>
+											<a href="">Company <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="private-limited-company.html">Private LimitedCompany</a></li>
+												<li><a href="limited-company.html">Limited Company</a></li>
+												<li><a href="one-person-company.html">One person Company</a></li>
+												<li><a href="llp.html">LLP</a></li>
+												<li><a href="#">Nidhi Company </a></li>
+												<li><a href="#">Producer Company</a></li>
+												<li><a href="section8company.html">Section 8 company</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="">Registration <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">Partnership Form Registration</a></li>
+												<li><a href="#">Trust Registration</a></li>
+												<li><a href="#">Society Registration</a></li>
+												<li><a href="#">Club Registration</a></li>
+											</ul>
+										</li>
+									</ul>
+									
+								</li>
+								<li>
+									<a href="#">Registration  <span class="fa fa-plus"></span></a>
+									<ul>
+										<li>
+											<a href="#">Tax Registration <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">GST</a></li>
+												<li><a href="#">VAT</a></li>
+												<li><a href="#">Service Tax</a></li>
+												<li><a href="#">Professional Tax</a></li>
+												<li><a href="#">Central Excise</a></li>
+												<li><a href="#">ESI</a></li>
+												<li><a href="#">PF</a></li>
+
+											</ul>
+										</li>
+										<li>
+											<a href="#">GOVT Registration <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">FSSAI</a></li>
+												<li><a href="#">Fire License</a></li>
+												<li><a href="#">Shops & Establishments Registration</a></li>
+												<li><a href="#">SSI</a></li>
+												<li><a href="#">Importer Exporter Code</a></li>
+
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Companies <span class="fa fa-plus"></span></a>
+									<ul>
+										<li>
+											<a href="#">TAX <span class="fa fa-plus"></span></a>
+											<ul>			
+												<li><a href="#">GST Return</a></li>
+												<li><a href="#">Sales Tax Return</a></li>
+												<li><a href="#">Service Tax Return</a></li>
+												<li><a href="#">Professional Tax Return</a></li>
+												<li><a href="#">Excise Return</a></li>
+												<li><a href="#">Professional Tax Return</a></li>
+												<li><a href="#">Excise Return</a></li>
+												<li><a href="#">ESI Return</a></li>
+												<li><a href="#">PF Return</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Secretarial Companies <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">Annual Compliances for companies</a></li>
+												<li><a href="#">Annual Compliances for LLPs</a></li>
+												<li><a href="#">Other Compliances for companies</a></li>
+												<li><a href="#">Other compliances for LLP</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Trade Mark / Copyright <span class="fa fa-plus"></span></a>
+									<ul>
+										<li>
+											<a href="#">Trade Mark <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">Trade Mark Registration</a></li>
+												<li><a href="#">Trade Mark Objection</a></li>
+												<li><a href="#">Trade Mark Renewal</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Copyright <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">Copy Right Registration</a></li>
+												<li><a href="#">Patent Registration</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Accounts & Closure <span class="fa fa-plus"></span></a>
+									<ul>
+										<li>
+											<a href="#">Business Registration <span class="fa fa-plus"></span></a>
+											<ul>
+												<li><a href="#">ACCOUNTS OUTSOURCING (additional services)</a></li>
+												<li><a href="#">Payroll Services</a></li>
+											</ul>
+										</li> 
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">GST<span class="caret"></span></a>
+							<ul>
+								<li><a href="#">GST Registration </a></li>
+								<li><a href="#">GST Migration </a></li>
+								<li><a href="#">GST Ammendment</a></li>
+								<li><a href="#">GST Return Filling</a></li>
+								<li><a href="#">GST Invoicing </a></li>
+							</ul>
+						</li>
+						<li><a href="offers.html">Offers</a></li>
+						<li><a href="partners.html">Partner With Us </a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/banner1.jpg" />
+				<div class="carousel-caption">
+					<p> Go online Connecting To the World <br />
+						with quality Service</p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/banner2.jpg" />
+				<div class="carousel-caption">
+					<p>Special offers to be dispayed</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="images/banner3.jpg" />
+				<div class="carousel-caption">
+					<p>Maintain Billing with us <br />Get your Accounts and Return ready</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<div class="overview-chooseus">
+		<div class="container">
+			<div class="services-heading">
+				<h4>how online</h4>
+			</div>
+			<div class="how-online-pic">
+				<img src="images/how-online.jpg" />
+			</div>
+		</div>
+	</div>
+
+	<div class="services-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-6 blue-bg">
+					<div class="services-inner">
+						<div class="services-heading">
+							<h4>services</h4>
+						</div>
+						<ul class="services-listing">
+							<li><i class="fa fa-check"></i> Start A Business </li>
+							<li> <i class="fa fa-check"></i> Registration</li>
+							<li><i class="fa fa-check"></i> COMPLINCES</li>
+							<li><i class="fa fa-check"></i> Trade Mark/ Copy Right </li>
+							<li><i class="fa fa-check"></i> ACCOUNTS &amp; CLOSURE </li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-2 no-pad">
+					<div class="hit-listing">
+						<h4>523</h4>
+						<p>happy clients</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clientspeak-clients-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="client-speak-clients">
+
+						<div class="client-speak">
+							<h4>CLIENT SPEAKS</h4>
+							<div id="owl-demo1" class="owl-carousel1 owl-theme">
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="testimonial_pic">
+												<img src="images/testimonial_pic1.jpg" />
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="testimonial_text">
+												<span>ADAM LIMITED</span>
+												<p>
+													Lorem Ipsum is simply dummy text of the printing and typesetting
+													industry. Lorem Ipsum has been
+													the industry's standard dummy text ever since the 1500s, when an
+													unknown printer took a galley of
+													type and scrambled it to make a type specimen book.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="testimonial_pic">
+												<img src="images/testimonial_pic2.jpg" />
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="testimonial_text">
+												<span>ABCD PVT LIMITED</span>
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+													eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+													ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+													aliquip ex ea commodo consequat. Duis aute irure dolor in
+													reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+													pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+													culpa qui officia deserunt mollit anim id est laborum..
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="testimonial_pic">
+												<img src="images/testimonial_pic3.jpg" />
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="testimonial_text">
+												<span>ABCD PVT LIMITED</span>
+												<p>
+													Lorem ipsum dolor sit amet, Duis aute irure dolor in reprehenderit
+													in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+													Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+													officia deserunt mollit anim id est laborum
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="testimonial_pic">
+												<img src="images/testimonial_pic4.jpg" />
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="testimonial_text">
+												<span>ABCD PVT LIMITED</span>
+												<p>
+													Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+													cupidatat non proident, sunt in culpa qui officia deserunt mollit
+													anim id est laborum..
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="partners">
+							<h4>partners</h4>
+							<div class="partners-slider">
+								<div id="owl-demo2" class="owl-carousel owl-theme">
+									<div class="item">
+										<p>Chartered Accountants</p>
+									</div>
+
+									<div class="item">
+										<p>Tax Consultants</p>
+									</div>
+
+									<div class="item">
+										<p>advocates</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="news-sec">
+		<div class="container">
+			<div class="news-inner">
+				<div class="news-heading">
+					<h4>LATEST NEWS</h4>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="news-box clearfix">
+							<div class="news-pic">
+								<img src="images/news-pic1.jpg" />
+							</div>
+							<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+							<p>26th jan 2017</p>
+							<p>By <span>Sam Dorami</span> </p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="news-box clearfix">
+							<div class="news-pic">
+								<img src="images/news-pic2.jpg" />
+							</div>
+							<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+							<p>26th jan 2017</p>
+							<p>By <span>Sam Dorami</span> </p>
+						</div>
+					</div>
+
+
+					<div class="col-sm-3">
+						<div class="news-box clearfix">
+							<div class="news-pic">
+								<img src="images/news-pic3.jpg" />
+							</div>
+							<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+							<p>26th jan 2017</p>
+							<p>By <span>Sam Dorami</span> </p>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="news-box clearfix">
+							<div class="news-pic">
+								<img src="images/news-pic4.jpg" />
+							</div>
+							<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+							<p>26th jan 2017</p>
+							<p>By <span>Sam Dorami</span> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--<div class="reach-contact-map">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 reach-us-col">
+					<div class="reach-us">
+						<h4>Reach US</h4>
+						<p><i class="fa fa-mobile"></i> +91 99999 88888</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<div class="clear"></div>
+
+	<!--======= FOOTER =========-->
+	<footer>
+		<div class="container"> 
+		 
+		  <div class="footer-info">
+			<div class="container">
+			  <div class="row"> 
+				
+				<!-- About -->
+				<div class="col-md-4 col-sm-12 col-xs-12"> 
+					<img class="margin-bottom-30" src="images/logo.jpg" alt="" >
+				  <p>Aoluptas sit aspernatur aut odit aut fugit, sed elits quias consequuntur magni dolores eos qui ratione volust  luptatem sequi nesciunt.. <br>
+				  
+				  <p>Aoluptas sit aspernatur aut odit aut fugit, sed elits quias consequuntur magni dolores </p>
+				  <div class="copy-sc">
+					<div class="sc">
+						<ul>
+							<li>
+								<a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="copy">
+						<p>© Copyright One Tax Solutions</p>
+					</div>
+				</div>
+				</div>
+				
+				<!-- Service provided -->
+				<div class="col-md-4 col-sm-12 col-xs-12">
+				  <h6>Quick Links</h6>
+				  <ul class="links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us </a></li>
+					<li><a href="#">Why Us</a></li>
+					<li><a href="#">Services </a></li>
+					<li><a href="#">Offers</a></li>
+					<li><a href="#">Partner With Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				</div>
+				
+				
+				<!-- Quote -->
+				<div class="col-md-4 col-sm-12 col-xs-12">
+				  <h6>YOUR QUERY</h6>
+				  <div class="quote">
+					<form>
+					  <input class="form-control" type="text" placeholder="Name">
+					  <input class="form-control" type="email" placeholder="Email ID">
+					  <input class="form-control" type="text" placeholder="Phone No">
+					  <textarea class="form-control" placeholder="Messages"></textarea>
+					  <button type="submit" class="btn">SEND NOW <span><i class="ion-ios-arrow-thin-right"></i></span></button>
+					</form>
+				  </div>
+				</div>
+				
+			  </div>
+			  
+			  <!--======= Footer Info =========-->
+			  <div class="foot-info-con">
+				<ul class="row">
+				  
+				  <!-- Call Us Now -->
+				  <li class="col-md-3 col-sm-6">
+					<div class="media-left">
+					  <div class="icon"> <i class="icon-call-in"></i></div>
+					</div>
+					<div class="media-body">
+					  <h6>Call Us Now </h6>
+					  <p>+ ( 124 ) 45 78 678 </p>
+					</div>
+				  </li>
+				  
+				  <!-- Email us -->
+				  <li class="col-md-3 col-sm-6">
+					<div class="media-left">
+					  <div class="icon"> <i class="icon-envelope-open"></i></div>
+					</div>
+					<div class="media-body">
+					  <h6>Email us</h6>
+					  <p>info@mail.com</p>
+					</div>
+				  </li>
+				  
+				  <!-- Fax to us -->
+				  <li class="col-md-3 col-sm-6">
+					<div class="media-left">
+					  <div class="icon"> <i class="icon-clock"></i></div>
+					</div>
+					<div class="media-body">
+					  <h6>Fax to us </h6>
+					  <p>+(01) 848-658-789</p>
+					</div>
+				  </li>
+				  <!-- Opening Time -->
+				  <li class="col-md-3 col-sm-6">
+					<div class="media-left">
+					  <div class="icon"> <i class="icon-printer"></i></div>
+					</div>
+					<div class="media-body">
+					  <h6>Opening Hours </h6>
+					  <p>Mon - Sat : 9am to 7pm</p>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	  
+	  <!--======= RIGHTS =========-->
+	  <div class="rights">
+		<div class="container">
+		  <p>© Copyright One Tax Solutions</p>
+		</div>
+	  </div>
+	</div>
+
+
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="owl-carousel2/js/owl.carousel.js"></script>
+	<script src="js/easyResponsiveTabs.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow-script.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scroll.js"></script>
+
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-buttons.css" />
+	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/helpers/jquery.fancybox-thumbs.css" />
+	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
+
+	<script src="js/main.js"></script>
+
+	<link rel="stylesheet" href="css/popup-style.css">
+	<script src="js/popup.js"></script>
+</body>
+
+
+</html>
